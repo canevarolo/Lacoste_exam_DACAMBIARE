@@ -97,7 +97,7 @@ html, body {
 .content { max-width: 980px; margin: 0 auto; padding: 0 24px 100px; }
 
 /* ===== Intro ===== */
-.intro { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+.intro { text-align: center; max-width: 640px; margin: 0 auto 96px; }
 .intro p { font-size: 1.05rem; color: var(--text-dim); }
 .intro strong { color: var(--text); }
 
