@@ -221,3 +221,126 @@ html, body {
 @media (max-width: 600px) {
   .hero { padding: 90px 20px 60px; }
 }
+
+
+/* ===== Intro ===== */
+.intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+.intro p {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+}
+.intro strong { color: var(--text); }
+
+/* ===== Section headers ===== */
+.section { margin-bottom: 64px; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--surface-border);
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+}
+.section-head h2 { margin: 0; }
+
+.section-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* ===== Lab buttons ===== */
+.lab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.lab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 12px 14px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lab-btn .lab-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cold-2), var(--cold));
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.lab-btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--warm);
+  background: rgba(249, 115, 22, 0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.lab-btn:hover .lab-num {
+  background: linear-gradient(135deg, var(--warm), var(--hot));
+}
+
+/* ===== Resource cards ===== */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  text-decoration: none;
+  color: var(--text);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.resource-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--cold-2);
+}
+
+.resource-icon { font-size: 1.6rem; }
+.resource-title { font-weight: 700; font-size: 1.05rem; }
+.resource-desc { color: var(--text-dim); font-size: 0.85rem; }
+
+/* ===== Note finale ===== */
+.note {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--surface-border);
+}
+.note p { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
+.note code {
+  background: rgba(255,255,255,0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
