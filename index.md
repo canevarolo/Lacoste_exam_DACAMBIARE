@@ -1,41 +1,29 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
 
-## 🔥❄️ Computational Heat Transfer — Lacoste
+## 🧪 Laboratori
 
-> **La**boratorio **Co**mputazionale di **S**cambio **Te**rmico — soluzioni ed esercitazioni in MATLAB.
+<div class="lab-grid">
+  <a class="lab-card" href="Laib_3/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_3</span></a>
+  <a class="lab-card" href="Laib_4/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_4</span></a>
+  <a class="lab-card" href="Laib_7/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_7</span></a>
+  <a class="lab-card" href="Laib_8/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_8</span></a>
+  <a class="lab-card" href="Laib_9/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_9</span></a>
+  <a class="lab-card" href="Laib_10/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_10</span></a>
+  <a class="lab-card" href="Laib_11/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_11</span></a>
+  <a class="lab-card" href="Laib_12/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_12</span></a>
+  <a class="lab-card" href="Laib_13/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_13</span></a>
+  <a class="lab-card" href="Laib_14/"><span class="lab-icon">LAB</span><span class="lab-name">Laib_14</span></a>
+</div>
 
----
+## 📝 Altre risorse
 
-### 📐 Laboratori
+<div class="link-row">
+  <a class="link-pill" href="Exams/">📄 Exams</a>
+  <a class="link-pill" href="Reports/">📊 Reports</a>
+  <a class="link-pill" href="docs/">📚 docs</a>
+</div>
 
-| # | Argomento | Link |
-|---|---|---|
-| 03 | Conduzione | [Apri](Laib_3/) |
-| 04 | Conduzione avanzata | [Apri](Laib_4/) |
-| 07 | Convezione | [Apri](Laib_7/) |
-| 08 | Convezione avanzata | [Apri](Laib_8/) |
-| 09 | Irraggiamento | [Apri](Laib_9/) |
-| 10 | Scambiatori di calore | [Apri](Laib_10/) |
-| 11 | Scambiatori — parte 2 | [Apri](Laib_11/) |
-| 12 | Metodi numerici | [Apri](Laib_12/) |
-| 13 | Metodi numerici — parte 2 | [Apri](Laib_13/) |
-| 14 | Applicazioni finali | [Apri](Laib_14/) |
-
-### 📝 Esami
-
-[→ Vai alla cartella Exams](Exams/)
-
-### 📊 Report
-
-[→ Vai alla cartella Reports](Reports/)
-
-### 📚 Documentazione
-
-[→ Vai a docs/](docs/)
-
----
-
-*I file sono sviluppati in linguaggio MATLAB (`.m`). Per errori o aggiunte, apri una pull request.*
+<p><em>I file sono sviluppati in linguaggio MATLAB (.m). Per errori o aggiunte, apri una pull request.</em></p>
