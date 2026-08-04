@@ -1,9 +1,5 @@
-title: "Lacoste — Esami PoliTO"
-description: "Materiale ed esercitazioni — Politecnico di Torino"
+title: "Lacoste — Computational Heat Transfer"
+description: "Esercitazioni e soluzioni MATLAB — Scambio Termico Computazionale, Politecnico di Torino"
 theme: jekyll-theme-cayman
-
-# Menu di navigazione in alto
-plugins:
-  - jekyll-relative-links
 
 markdown: kramdown
