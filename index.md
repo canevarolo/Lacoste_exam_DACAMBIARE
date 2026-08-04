@@ -3,39 +3,39 @@ layout: home
 title: Home
 ---
 
-# Lacoste — Materiale PoliTO
+## 🔥❄️ Computational Heat Transfer — Lacoste
 
-Raccolta di laboratori, esami e report del corso.
-
-## 📚 Contenuti
-
-- [Laboratori](#laboratori)
-- [Esami](#esami)
-- [Report](#report)
-
-## Laboratori
-
-| Laboratorio | Link |
-|---|---|
-| Laib 3  | [Apri](Laib_3/) |
-| Laib 4  | [Apri](Laib_4/) |
-| Laib 7  | [Apri](Laib_7/) |
-| Laib 8  | [Apri](Laib_8/) |
-| Laib 9  | [Apri](Laib_9/) |
-| Laib 10 | [Apri](Laib_10/) |
-| Laib 11 | [Apri](Laib_11/) |
-| Laib 12 | [Apri](Laib_12/) |
-| Laib 13 | [Apri](Laib_13/) |
-| Laib 14 | [Apri](Laib_14/) |
-
-## Esami
-
-[Vai alla cartella Exams](Exams/)
-
-## Report
-
-[Vai alla cartella Reports](Reports/)
+> **La**boratorio **Co**mputazionale di **S**cambio **Te**rmico — soluzioni ed esercitazioni in MATLAB.
 
 ---
 
-📖 Documentazione aggiuntiva: [docs/](docs/)
+### 📐 Laboratori
+
+| # | Argomento | Link |
+|---|---|---|
+| 03 | Conduzione | [Apri](Laib_3/) |
+| 04 | Conduzione avanzata | [Apri](Laib_4/) |
+| 07 | Convezione | [Apri](Laib_7/) |
+| 08 | Convezione avanzata | [Apri](Laib_8/) |
+| 09 | Irraggiamento | [Apri](Laib_9/) |
+| 10 | Scambiatori di calore | [Apri](Laib_10/) |
+| 11 | Scambiatori — parte 2 | [Apri](Laib_11/) |
+| 12 | Metodi numerici | [Apri](Laib_12/) |
+| 13 | Metodi numerici — parte 2 | [Apri](Laib_13/) |
+| 14 | Applicazioni finali | [Apri](Laib_14/) |
+
+### 📝 Esami
+
+[→ Vai alla cartella Exams](Exams/)
+
+### 📊 Report
+
+[→ Vai alla cartella Reports](Reports/)
+
+### 📚 Documentazione
+
+[→ Vai a docs/](docs/)
+
+---
+
+*I file sono sviluppati in linguaggio MATLAB (`.m`). Per errori o aggiunte, apri una pull request.*
