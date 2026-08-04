@@ -13,17 +13,17 @@ title: Home
     <span class="section-count">10 laboratori</span>
   </div>
 
-  <div class="lab-buttons">
-    <a class="lab-btn" href="Laib_3/"><span class="lab-num">03</span>Laib_3</a>
-    <a class="lab-btn" href="Laib_4/"><span class="lab-num">04</span>Laib_4</a>
-    <a class="lab-btn" href="Laib_7/"><span class="lab-num">07</span>Laib_7</a>
-    <a class="lab-btn" href="Laib_8/"><span class="lab-num">08</span>Laib_8</a>
-    <a class="lab-btn" href="Laib_9/"><span class="lab-num">09</span>Laib_9</a>
-    <a class="lab-btn" href="Laib_10/"><span class="lab-num">10</span>Laib_10</a>
-    <a class="lab-btn" href="Laib_11/"><span class="lab-num">11</span>Laib_11</a>
-    <a class="lab-btn" href="Laib_12/"><span class="lab-num">12</span>Laib_12</a>
-    <a class="lab-btn" href="Laib_13/"><span class="lab-num">13</span>Laib_13</a>
-    <a class="lab-btn" href="Laib_14/"><span class="lab-num">14</span>Laib_14</a>
+  <div class="lab-grid">
+    <a class="lab-card" href="Laib_3/" style="--i: 0"><span class="lab-bg-num">03</span><span class="lab-name">Laib_3</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_4/" style="--i: 1"><span class="lab-bg-num">04</span><span class="lab-name">Laib_4</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_7/" style="--i: 2"><span class="lab-bg-num">07</span><span class="lab-name">Laib_7</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_8/" style="--i: 3"><span class="lab-bg-num">08</span><span class="lab-name">Laib_8</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_9/" style="--i: 4"><span class="lab-bg-num">09</span><span class="lab-name">Laib_9</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_10/" style="--i: 5"><span class="lab-bg-num">10</span><span class="lab-name">Laib_10</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_11/" style="--i: 6"><span class="lab-bg-num">11</span><span class="lab-name">Laib_11</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_12/" style="--i: 7"><span class="lab-bg-num">12</span><span class="lab-name">Laib_12</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_13/" style="--i: 8"><span class="lab-bg-num">13</span><span class="lab-name">Laib_13</span><span class="lab-arrow">→</span></a>
+    <a class="lab-card" href="Laib_14/" style="--i: 9"><span class="lab-bg-num">14</span><span class="lab-name">Laib_14</span><span class="lab-arrow">→</span></a>
   </div>
 </section>
 
