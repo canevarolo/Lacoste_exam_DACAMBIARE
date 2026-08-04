@@ -7,6 +7,12 @@ title: Home
   <p>Raccolta di esercitazioni MATLAB per il corso di <strong>Computational Heat Transfer</strong> — conduzione, convezione, irraggiamento e scambiatori di calore.</p>
 </section>
 
+<section class="about">
+  <p>Solutions of problems of "Computational Heat Transfer" course from Energy Engineering in Politecnico di Torino. The term "Lacoste" is the nickname of the italian name of this exam (<em>"LAboratorio COmputazionale di Scambio TErmico"</em>) and has nothing to do with... bags or polos. :)</p>
+  <p>The reason why there is a repository for each year is because requests, and so codes, change throughout the years. The files are developed in MATLAB language, charged in <code>.m</code>.</p>
+  <p>For any mistakes or add-ins, just open a pull request or contact me. Texts — and some parts — will be both in english and italian.</p>
+</section>
+
 <section class="section">
   <div class="section-head">
     <h2>🧪 Laboratori</h2>
