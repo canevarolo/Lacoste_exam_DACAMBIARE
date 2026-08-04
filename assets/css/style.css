@@ -1,0 +1,223 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cold: #2563eb;
+  --cold-2: #06b6d4;
+  --warm: #f97316;
+  --hot: #ef4444;
+  --bg: #0b0f1a;
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-border: rgba(255, 255, 255, 0.12);
+  --text: #e8eaf0;
+  --text-dim: #9aa3b5;
+}
+
+html, body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ===== Sfondo animato ===== */
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.45;
+  animation: float 18s ease-in-out infinite;
+}
+.blob-1 {
+  width: 500px; height: 500px;
+  background: var(--cold);
+  top: -150px; left: -100px;
+}
+.blob-2 {
+  width: 450px; height: 450px;
+  background: var(--hot);
+  bottom: -150px; right: -100px;
+  animation-delay: -6s;
+}
+.blob-3 {
+  width: 350px; height: 350px;
+  background: var(--warm);
+  top: 40%; left: 60%;
+  animation-delay: -12s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(40px, -30px) scale(1.08); }
+  66%      { transform: translate(-30px, 30px) scale(0.95); }
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding: 120px 24px 80px;
+  text-align: center;
+}
+.hero-inner { max-width: 780px; margin: 0 auto; }
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(100deg, var(--cold-2), var(--cold) 40%, var(--warm) 75%, var(--hot));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  margin-bottom: 36px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: var(--text);
+  color: #0b0f1a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255,255,255,0.15);
+}
+
+/* ===== Content ===== */
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+
+.content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 56px 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content h2:first-child { margin-top: 0; }
+
+.content p { color: var(--text-dim); line-height: 1.7; margin-bottom: 16px; }
+
+.content > p > em { color: var(--text-dim); font-size: 0.9rem; }
+
+/* ===== Card grid per i laboratori ===== */
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.lab-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  text-decoration: none;
+  color: var(--text);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.lab-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--warm);
+  background: rgba(249, 115, 22, 0.08);
+}
+
+.lab-card .lab-icon {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--cold-2);
+  letter-spacing: 0.5px;
+}
+
+.lab-card .lab-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ===== Sezioni link semplici (Exams, Reports, docs) ===== */
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.link-pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--cold-2);
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 32px 24px 48px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.footer a { color: var(--text-dim); }
+.footer a:hover { color: var(--warm); }
+
+@media (max-width: 600px) {
+  .hero { padding: 90px 20px 60px; }
+}
